@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-15">
+		<attributes>
+			<attribute name="module" value="true"/>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/parsatempleowl/Desktop/Jar Files/Servlet_JSP/servlet-api.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/parsatempleowl/Downloads/hibernate-release-5.0.12.Final/lib/required/hibernate 5.0 jar files/antlr-2.7.7.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/parsatempleowl/Downloads/hibernate-release-5.0.12.Final/lib/required/hibernate 5.0 jar files/dom4j-1.6.1.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/parsatempleowl/Downloads/hibernate-release-5.0.12.Final/lib/required/hibernate 5.0 jar files/geronimo-jta_1.1_spec-1.1.1.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/parsatempleowl/Downloads/hibernate-release-5.0.12.Final/lib/required/hibernate 5.0 jar files/hibernate-commons-annotations-5.0.1.Final.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/parsatempleowl/Downloads/hibernate-release-5.0.12.Final/lib/required/hibernate 5.0 jar files/hibernate-core-5.0.12.Final.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/parsatempleowl/Downloads/hibernate-release-5.0.12.Final/lib/required/hibernate 5.0 jar files/hibernate-jpa-2.1-api-1.0.0.Final.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/parsatempleowl/Downloads/hibernate-release-5.0.12.Final/lib/required/hibernate 5.0 jar files/jandex-2.0.0.Final.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/parsatempleowl/Downloads/hibernate-release-5.0.12.Final/lib/required/hibernate 5.0 jar files/javassist-3.18.1-GA.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/parsatempleowl/Downloads/hibernate-release-5.0.12.Final/lib/required/hibernate 5.0 jar files/jboss-logging-3.3.0.Final.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/parsatempleowl/Documents/ServletAndJSP/ServletAndJSP/WebContent/WEB-INF/lib/jstl-1.2.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
