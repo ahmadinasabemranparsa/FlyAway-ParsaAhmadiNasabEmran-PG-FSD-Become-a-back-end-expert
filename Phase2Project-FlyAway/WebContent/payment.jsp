@@ -26,8 +26,18 @@
 		<p><span><strong>Enter Payment Details</strong></span></p>
 		
 		<section>
+			<h2><span><strong>Details of Flight Being Booked</strong></span></h2>
+			<h3><span><strong>
+				Flight Number: <%=Booking.flight_number %> | Airline Name: <%=Booking.airline_name %> | Source: <%=Booking.source %>
+			</strong></span></h3>
+			<h3><span><strong>
+				Destination: <%=Booking.destination %> | Ticket Price: <%=Booking.ticket_price %>
+			</strong></span></h3>
+		</section>
+		
+		<section>
 			<form action="thank-you.jsp" method="post">
-				Name On Card: <input type="text" name="name_on_card" id="name_on_card">
+				Name On Card: <input type="text" name="name_on_card" id="name_on_card"><br>
 				Card Number: <input type="number" name="card_number" id="card_number">
 				<p><span><strong>Total fare = <br> <%=Booking.ticket_price%> X <%=Booking.persons%> persons = Rs.<%=Booking.ticket_price*Booking.persons%></strong></span></p>
 				<button type="submit">Submit Payment Details</button>

@@ -16,7 +16,6 @@
 		url="jdbc:mysql://localhost:3306/FlyAway"
 		user="root" password="PTempleOwl#1998" />
 		
-		<c:set var="flight_number1" value='<%= Integer.parseInt(request.getParameter("flight_number")) %>' />
 		<c:set var="airline_name1" value='<%= request.getParameter("airline_name") %>' />
 		<c:set var="source1" value='<%= request.getParameter("source") %>' />
 		<c:set var="destination1" value='<%= request.getParameter("destination") %>' />
@@ -24,7 +23,7 @@
 		<c:set var="ticket_price1" value='<%= Integer.parseInt(request.getParameter("ticket_price")) %>' />
 		
 		<sql:update dataSource="${db}" var="count"> 
-			INSERT INTO flights (flight_number, airline_name, source, destination, day, ticket_price) VALUES (${flight_number1}, "${airline_name1}", "${source1}", "${destination1}", "${day1}", ${ticket_price1}); 
+			INSERT INTO flights (airline_name, source, destination, day, ticket_price) VALUES ("${airline_name1}", "${source1}", "${destination1}", "${day1}", ${ticket_price1}); 
 		</sql:update>
 		
 		<p>New Flight Was Added Successfully</p>

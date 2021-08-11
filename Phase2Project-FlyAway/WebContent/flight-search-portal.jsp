@@ -18,19 +18,19 @@
 			<section>
 				<form action="flight-search-results.jsp" method="post">
 					<label for="date">Date</label>
-					<input type="date" id="date" name="date">
+					<input type="date" id="date" name="date" placeholder="YYYY-MM-DD"><br>
 					<label for="source">Source</label>
 					<select id="source" name="source">
 						<option value="India">India</option>
 						<option value="USA">USA</option>
 						<option value="UK">UK</option>
-					</select>
+					</select><br>
 					<label for="destination">Destination</label>
 					<select id="destination" name="destination">
 						<option value="India">India</option>
 						<option value="USA">USA</option>
 						<option value="UK">UK</option>
-					</select>
+					</select><br>
 					<label for="persons">Number of Persons</label>
 					<select id="persons" name="persons">
 						<option value="1">1</option>

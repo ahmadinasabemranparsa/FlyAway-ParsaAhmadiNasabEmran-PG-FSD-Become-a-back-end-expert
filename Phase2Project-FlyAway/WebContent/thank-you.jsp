@@ -17,31 +17,6 @@
 		<title>Thank You For Booking Your Flight</title>
 	</head>
 	<body>
-	
-		<section>
-			<sql:setDataSource  var="db" driver="com.mysql.cj.jdbc.Driver"
-			url="jdbc:mysql://localhost:3306/FlyAway"
-			user="root" password="PTempleOwl#1998" />
-			
-			<c:set var="passenger_name1" value="<%=Booking.passenger_name %>"/>
-			<c:set var="passenger_email1" value="<%=Booking.passenger_email %>" />
-			<c:set var="passenger_phone1" value="<%=Booking.passenger_phone %>" />
-			<c:set var="date1" value="<%=Booking.date %>" />
-			<c:set var="passenger_passport_number1" value="<%=Booking.passenger_passport_number %>" />
-			<c:set var="passenger_visa_number" value="<%=Booking.passenger_visa_number %>" />
-			<c:set var="flight_number1" value="<%=Booking.flight_number %>" />
-			<c:set var="airline_name1" value="<%=Booking.airline_name %>" />
-			<c:set var="source1" value="<%=Booking.source %>" />
-			<c:set var="destination1" value="<%=Booking.destination %>"/>
-			<c:set var="ticket_price1" value="<%=Booking.ticket_price %>" />
-			
-			<sql:update dataSource="${db}" var="count">
-				INSEERT INTO previously_booked_flights (passenger_name, passenger_email, passenger_phone, date, passenger_passport_number, passenger_visa_number, flight_number, airline_name, source, destination, ticket_price) VALUES ("${passenger_name1}", "${passenger_email1}", "${passenger_phone1}", "${date1}", "${passenger_passport_number1}", "${passenger_visa_number1}", ${flight_number1}, "${airline_name1}", "${source1}", "${destination1}", ${ticket_price1});
-			</sql:update>
-			
-			<p><span><strong>User Booked Flight Ticket Information Was Stored Successfully</strong></span></p>
-		</section>
-	
 		<a href="index.jsp">FlyAway</a>
 		<br>
 		<a href="admin-login.jsp">Admin Login</a>
@@ -52,7 +27,7 @@
 			<p><span><strong>Your ticket has been booked. The summary/details are as follows:</strong></span></p>
 			<h3>Booked Flight Ticket Summary</h3>
 			<h4><strong>from <%=Booking.source %> to <%=Booking.destination %> | <%=Booking.date %> (<%=Booking.day %>)</strong></h4>
-			<h5>Flight Number: <%=Booking.flight_number %> | Airline Name: <%=Booking.airline_name %> | Number of Travellers: <%=Booking.persons %></h5>
+			<h4>Flight Number: <%=Booking.flight_number %> | Airline Name: <%=Booking.airline_name %> | Number of Travellers: <%=Booking.persons %></h4>
 			<br>
 			<h3><strong>Passenger Summary</strong></h3>
 			<h4>Passenger Name: <%=Booking.passenger_name %> | Passenger Email: <%=Booking.passenger_name %> | Passenger Phone: <%=Booking.passenger_phone %></h4>

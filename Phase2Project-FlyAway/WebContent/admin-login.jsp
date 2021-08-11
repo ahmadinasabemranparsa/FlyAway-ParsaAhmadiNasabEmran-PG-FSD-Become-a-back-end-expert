@@ -17,8 +17,8 @@
 		<section>
 			<h2><b>Admin Login</b></h2>
 			<form action="admin-login" method="post">
-				Email: <input type="text" name="emailEntered" id="inputEmail">
-				Password: <input type="password" name="passwordEntered" id="inputPassword">
+				Email: <input type="text" name="emailEntered" id="inputEmail"><br>
+				Password: <input type="password" name="passwordEntered" id="inputPassword"><br>
 				<button type="submit">Admin Login</button>
 			</form>
 			<br><small>Email: admin@flyaway.com</small>

@@ -35,10 +35,6 @@
 				<button type="submit">Add New Flight</button>
 			</form>
 			
-			<form action="previous-flight-bookings.jsp" method="post">
-				<button type="submit">Previous Flight Bookings</button>
-			</form>
-			
 			<form action="admin-login.jsp" method="post">
 				<button type="submit">Logout</button>
 			</form>

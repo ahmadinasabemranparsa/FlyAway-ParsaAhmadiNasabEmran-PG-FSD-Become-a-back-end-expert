@@ -30,9 +30,9 @@
 		<section>
 			<h2><span><strong>Flight Search Results</strong></span></h2>
 			<p><span><strong>
-				Showing available flights from <%=request.getParameter("source")%> to <%=request.getParameter("destination")%> <br>
-				Date of Travel: <%=request.getParameter("date")%> <%=LocalDate.parse(request.getParameter("date")).getDayOfWeek().toString() %> <br>
-				Number of Travellers: <%=Integer.parseInt(request.getParameter("persons"))%>
+				Showing available flights from <%=Booking.source%> to <%=Booking.destination%> <br>
+				Date of Travel: <%=Booking.date%> <%=Booking.day %> <br>
+				Number of Travellers: <%=Booking.persons%>
 			</strong></span></p>
 			<p><span><strong>Select A Flight</strong></span></p>
 		</section>
@@ -41,8 +41,8 @@
 			<table>
 				<thead>
 					<tr>
-						<th>Airline Name</th>
 						<th>Flight Number</th>
+						<th>Airline Name</th>
 						<th>Source</th>
 						<th>Destination</th>
 						<th>Date</th>
@@ -65,16 +65,16 @@
 					
 					<c:forEach var="table" items="${rs.rows}">
 						<tr>
-							<td><c:out value="${table.airline_name}"/></td>
 							<td><c:out value="${table.flight_number}"/></td>
+							<td><c:out value="${table.airline_name}"/></td>
 							<td><c:out value="${table.source}"/></td>
 							<td><c:out value="${table.destination}"/></td>
 							<td><%=request.getParameter("date")%></td>
 							<td><c:out value="${table.ticket_price}"/></td>
 							<td>
 								<form action="user-booking-details.jsp" method="post">
-									<input type="hidden" id="airline_name" name="airline_name" value="${table.airline_name}">
 									<input type="hidden" id="flight_number" name="flight_number" value="${table.flight_number}">
+									<input type="hidden" id="airline_name" name="airline_name" value="${table.airline_name}">
 									<input type="hidden" id="source" name="source" value="${table.source}">
 									<input type="hidden" id="destination" name="destination" value="${table.destination}">
 									<input type="hidden" id="date" name="date" value="<%=request.getParameter("date")%>">
