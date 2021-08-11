@@ -30,10 +30,7 @@
 			<form action="change-password.jsp" method="post">
 				<button type="submit">Change Password</button>
 			</form>
-			
-			<form action="add-new-flight.jsp" method="post">
-				<button type="submit">Add New Flight</button>
-			</form>
+
 			
 			<form action="admin-login.jsp" method="post">
 				<button type="submit">Logout</button>
